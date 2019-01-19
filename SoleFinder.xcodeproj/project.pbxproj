@@ -15,6 +15,13 @@
 		6B0F287121F2FF4E001647EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */; };
 		6B0F287C21F2FF4E001647EF /* SoleFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F287B21F2FF4E001647EF /* SoleFinderTests.swift */; };
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
+		6B6D3CE021F3030E00D99F7B /* adidas_yeezy in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CD921F3030E00D99F7B /* adidas_yeezy */; };
+		6B6D3CE121F3030E00D99F7B /* adidas_alphabounce in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDA21F3030E00D99F7B /* adidas_alphabounce */; };
+		6B6D3CE221F3030E00D99F7B /* adidas_nite in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDB21F3030E00D99F7B /* adidas_nite */; };
+		6B6D3CE321F3030E00D99F7B /* adidas_superstar in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDC21F3030E00D99F7B /* adidas_superstar */; };
+		6B6D3CE421F3030E00D99F7B /* adidas_kalus in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDD21F3030E00D99F7B /* adidas_kalus */; };
+		6B6D3CE521F3030E00D99F7B /* adidas_ultraboost in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDE21F3030E00D99F7B /* adidas_ultraboost */; };
+		6B6D3CE621F3030E00D99F7B /* adidas_zeta in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDF21F3030E00D99F7B /* adidas_zeta */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		6B0F288221F2FF4E001647EF /* SoleFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleFinderUITests.swift; sourceTree = "<group>"; };
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6D3CD921F3030E00D99F7B /* adidas_yeezy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_yeezy; sourceTree = "<group>"; };
+		6B6D3CDA21F3030E00D99F7B /* adidas_alphabounce */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_alphabounce; sourceTree = "<group>"; };
+		6B6D3CDB21F3030E00D99F7B /* adidas_nite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_nite; sourceTree = "<group>"; };
+		6B6D3CDC21F3030E00D99F7B /* adidas_superstar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_superstar; sourceTree = "<group>"; };
+		6B6D3CDD21F3030E00D99F7B /* adidas_kalus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_kalus; sourceTree = "<group>"; };
+		6B6D3CDE21F3030E00D99F7B /* adidas_ultraboost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_ultraboost; sourceTree = "<group>"; };
+		6B6D3CDF21F3030E00D99F7B /* adidas_zeta */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_zeta; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,13 @@
 		6B76317F21F30128005645C8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				6B6D3CDA21F3030E00D99F7B /* adidas_alphabounce */,
+				6B6D3CDD21F3030E00D99F7B /* adidas_kalus */,
+				6B6D3CDB21F3030E00D99F7B /* adidas_nite */,
+				6B6D3CDC21F3030E00D99F7B /* adidas_superstar */,
+				6B6D3CDE21F3030E00D99F7B /* adidas_ultraboost */,
+				6B6D3CD921F3030E00D99F7B /* adidas_yeezy */,
+				6B6D3CDF21F3030E00D99F7B /* adidas_zeta */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -240,9 +261,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6D3CE121F3030E00D99F7B /* adidas_alphabounce in Resources */,
+				6B6D3CE421F3030E00D99F7B /* adidas_kalus in Resources */,
+				6B6D3CE621F3030E00D99F7B /* adidas_zeta in Resources */,
 				6B0F287121F2FF4E001647EF /* LaunchScreen.storyboard in Resources */,
+				6B6D3CE221F3030E00D99F7B /* adidas_nite in Resources */,
 				6B0F286E21F2FF4E001647EF /* Assets.xcassets in Resources */,
 				6B0F286921F2FF4D001647EF /* Main.storyboard in Resources */,
+				6B6D3CE321F3030E00D99F7B /* adidas_superstar in Resources */,
+				6B6D3CE021F3030E00D99F7B /* adidas_yeezy in Resources */,
+				6B6D3CE521F3030E00D99F7B /* adidas_ultraboost in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
