@@ -99,6 +99,7 @@
 		6B0F286221F2FF4D001647EF /* SoleFinder */ = {
 			isa = PBXGroup;
 			children = (
+				6B76317F21F30128005645C8 /* SupportingFiles */,
 				6B0F286321F2FF4D001647EF /* AppDelegate.swift */,
 				6B0F286521F2FF4D001647EF /* ViewController.swift */,
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
@@ -126,6 +127,13 @@
 				6B0F288821F2FF4E001647EF /* Info.plist */,
 			);
 			path = SoleFinderUITests;
+			sourceTree = "<group>";
+		};
+		6B76317F21F30128005645C8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
