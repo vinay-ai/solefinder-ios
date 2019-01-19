@@ -22,6 +22,8 @@
 		6B6D3CE421F3030E00D99F7B /* adidas_kalus in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDD21F3030E00D99F7B /* adidas_kalus */; };
 		6B6D3CE521F3030E00D99F7B /* adidas_ultraboost in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDE21F3030E00D99F7B /* adidas_ultraboost */; };
 		6B6D3CE621F3030E00D99F7B /* adidas_zeta in Resources */ = {isa = PBXBuildFile; fileRef = 6B6D3CDF21F3030E00D99F7B /* adidas_zeta */; };
+		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
+		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		6B6D3CDD21F3030E00D99F7B /* adidas_kalus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_kalus; sourceTree = "<group>"; };
 		6B6D3CDE21F3030E00D99F7B /* adidas_ultraboost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_ultraboost; sourceTree = "<group>"; };
 		6B6D3CDF21F3030E00D99F7B /* adidas_zeta */ = {isa = PBXFileReference; lastKnownFileType = folder; path = adidas_zeta; sourceTree = "<group>"; };
+		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
+		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				6B76317F21F30128005645C8 /* SupportingFiles */,
+				6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */,
 				6B0F286321F2FF4D001647EF /* AppDelegate.swift */,
 				6B0F286521F2FF4D001647EF /* ViewController.swift */,
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
@@ -121,6 +126,7 @@
 				6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */,
 				6B0F287221F2FF4E001647EF /* Info.plist */,
 				6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */,
+				6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */,
 			);
 			path = SoleFinder;
 			sourceTree = "<group>";
@@ -295,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */,
 				6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */,
+				6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */,
 				6B0F286621F2FF4D001647EF /* ViewController.swift in Sources */,
 				6B0F286421F2FF4D001647EF /* AppDelegate.swift in Sources */,
 			);

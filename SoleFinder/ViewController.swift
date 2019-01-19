@@ -9,11 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
+    @IBOutlet weak var categoryLabel: UILabel!
+    let model = SoleIdentifier()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        let imageView = sender.view as? UIImageView
+        
+        if let imageToAnalyse = imageView?.image {
+            if let SoleLabelString = SoleLabel(forImage: imageToAnalyse) {
+                categoryLabel.text = SoleLabelString
+            }
+        }
+    }
+    
+    func SoleLabel (forImage image:UIImage) -> String? {
+        if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: image.cgImage!) {
+            guard let sole = try? model.prediction(image: pixelBuffer) else {fatalError("Unexpected runtime error")}
+            return sole.classLabel
+            
+        }
+        
+        return nil
+    }
+    
 
 
 }
