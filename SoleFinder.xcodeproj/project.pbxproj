@@ -11,10 +11,11 @@
 		6B0F286621F2FF4D001647EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286521F2FF4D001647EF /* ViewController.swift */; };
 		6B0F286921F2FF4D001647EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286721F2FF4D001647EF /* Main.storyboard */; };
 		6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */; };
-		6B0F286E21F2FF4E001647EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286D21F2FF4E001647EF /* Assets.xcassets */; };
 		6B0F287121F2FF4E001647EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */; };
 		6B0F287C21F2FF4E001647EF /* SoleFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F287B21F2FF4E001647EF /* SoleFinderTests.swift */; };
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
+		6B21B73C21F879C800ADCD87 /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B21B73B21F879C700ADCD87 /* Lets_get_started.png */; };
+		6B21B73F21F87B2600ADCD87 /* Click_here.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B21B73E21F87B2600ADCD87 /* Click_here.png */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 		6B83621821F3331B00C33C0F /* ultraboost27.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B8361AD21F3331B00C33C0F /* ultraboost27.jpeg */; };
@@ -143,7 +144,6 @@
 		6B0F286521F2FF4D001647EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6B0F286821F2FF4D001647EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B0F286B21F2FF4D001647EF /* SoleFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoleFinder.xcdatamodel; sourceTree = "<group>"; };
-		6B0F286D21F2FF4E001647EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B0F287021F2FF4E001647EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B0F287221F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B0F287721F2FF4E001647EF /* SoleFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +152,8 @@
 		6B0F288221F2FF4E001647EF /* SoleFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleFinderUITests.swift; sourceTree = "<group>"; };
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B21B73B21F879C700ADCD87 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lets_get_started.png; path = ../../../../../Assets/Solefinder/Lets_get_started.png; sourceTree = "<group>"; };
+		6B21B73E21F87B2600ADCD87 /* Click_here.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Click_here.png; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		6B8361AD21F3331B00C33C0F /* ultraboost27.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ultraboost27.jpeg; sourceTree = "<group>"; };
@@ -310,7 +312,6 @@
 				6B0F286321F2FF4D001647EF /* AppDelegate.swift */,
 				6B0F286521F2FF4D001647EF /* ViewController.swift */,
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
-				6B0F286D21F2FF4E001647EF /* Assets.xcassets */,
 				6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */,
 				6B0F287221F2FF4E001647EF /* Info.plist */,
 				6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */,
@@ -337,9 +338,27 @@
 			path = SoleFinderUITests;
 			sourceTree = "<group>";
 		};
+		6B21B73621F8780500ADCD87 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				6B21B73B21F879C700ADCD87 /* Lets_get_started.png */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		6B21B73D21F87AD600ADCD87 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6B21B73E21F87B2600ADCD87 /* Click_here.png */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		6B8361AB21F332F500C33C0F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				6B21B73D21F87AD600ADCD87 /* Button */,
+				6B21B73621F8780500ADCD87 /* Stories */,
 				6B8361EF21F3331B00C33C0F /* adidas_alphabounce */,
 				6B8361CC21F3331B00C33C0F /* adidas_kalus */,
 				6B83620D21F3331B00C33C0F /* adidas_nite */,
@@ -618,6 +637,7 @@
 				6B83624E21F3331B00C33C0F /* zeta5.jpeg in Resources */,
 				6B83625021F3331B00C33C0F /* zeta8.jpeg in Resources */,
 				6B83627221F3331B00C33C0F /* superstar13.jpeg in Resources */,
+				6B21B73F21F87B2600ADCD87 /* Click_here.png in Resources */,
 				6B83625421F3331B00C33C0F /* zeta1.jpeg in Resources */,
 				6B83622B21F3331B00C33C0F /* ultraboost19.jpeg in Resources */,
 				6B83625A21F3331B00C33C0F /* alphabounce7.jpeg in Resources */,
@@ -692,7 +712,6 @@
 				6B83622521F3331B00C33C0F /* ultraboost20.jpeg in Resources */,
 				6B83624B21F3331B00C33C0F /* yeezy2.jpeg in Resources */,
 				6B83626321F3331B00C33C0F /* alphabounce5.jpeg in Resources */,
-				6B0F286E21F2FF4E001647EF /* Assets.xcassets in Resources */,
 				6B83624C21F3331B00C33C0F /* yeezy3.jpeg in Resources */,
 				6B83623421F3331B00C33C0F /* ultraboost12.jpeg in Resources */,
 				6B83623721F3331B00C33C0F /* kalus2.jpeg in Resources */,
@@ -705,6 +724,7 @@
 				6B83623E21F3331B00C33C0F /* kalus11.jpeg in Resources */,
 				6B83625121F3331B00C33C0F /* zeta4.jpeg in Resources */,
 				6B83627321F3331B00C33C0F /* nite6.jpeg in Resources */,
+				6B21B73C21F879C800ADCD87 /* Lets_get_started.png in Resources */,
 				6B83624521F3331B00C33C0F /* yeezy8.png in Resources */,
 				6B83626821F3331B00C33C0F /* superstar16.jpeg in Resources */,
 				6B83623021F3331B00C33C0F /* ultraboost1.jpeg in Resources */,
