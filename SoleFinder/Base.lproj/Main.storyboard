@@ -65,6 +65,6 @@
     </scenes>
     <resources>
         <image name="Click_here.png" width="272" height="44"/>
-        <image name="Lets_get_started.png" width="320" height="374"/>
+        <image name="Lets_get_started.png" width="1152" height="1347"/>
     </resources>
 </document>

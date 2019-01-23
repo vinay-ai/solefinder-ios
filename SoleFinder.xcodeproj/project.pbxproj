@@ -14,8 +14,8 @@
 		6B0F287121F2FF4E001647EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */; };
 		6B0F287C21F2FF4E001647EF /* SoleFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F287B21F2FF4E001647EF /* SoleFinderTests.swift */; };
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
-		6B21B73C21F879C800ADCD87 /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B21B73B21F879C700ADCD87 /* Lets_get_started.png */; };
 		6B21B73F21F87B2600ADCD87 /* Click_here.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B21B73E21F87B2600ADCD87 /* Click_here.png */; };
+		6B5633DB21F8DCF40035698D /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B5633DA21F8DCF40035698D /* Lets_get_started.png */; };
 		6B6A0E1D21F883B000F95493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
@@ -153,8 +153,8 @@
 		6B0F288221F2FF4E001647EF /* SoleFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleFinderUITests.swift; sourceTree = "<group>"; };
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B21B73B21F879C700ADCD87 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lets_get_started.png; path = ../../../../../Assets/Solefinder/Lets_get_started.png; sourceTree = "<group>"; };
 		6B21B73E21F87B2600ADCD87 /* Click_here.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Click_here.png; sourceTree = "<group>"; };
+		6B5633DA21F8DCF40035698D /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lets_get_started.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -344,7 +344,7 @@
 		6B21B73621F8780500ADCD87 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
-				6B21B73B21F879C700ADCD87 /* Lets_get_started.png */,
+				6B5633DA21F8DCF40035698D /* Lets_get_started.png */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -694,6 +694,7 @@
 				6B83627521F3331B00C33C0F /* nite7.jpeg in Resources */,
 				6B83625721F3331B00C33C0F /* alphabounce6.jpeg in Resources */,
 				6B83627621F3331B00C33C0F /* nite1.jpeg in Resources */,
+				6B5633DB21F8DCF40035698D /* Lets_get_started.png in Resources */,
 				6B83624621F3331B00C33C0F /* yeezy10.jpeg in Resources */,
 				6B83627C21F3331B00C33C0F /* nite5.jpeg in Resources */,
 				6B83623221F3331B00C33C0F /* ultraboost29.jpeg in Resources */,
@@ -728,7 +729,6 @@
 				6B83623E21F3331B00C33C0F /* kalus11.jpeg in Resources */,
 				6B83625121F3331B00C33C0F /* zeta4.jpeg in Resources */,
 				6B83627321F3331B00C33C0F /* nite6.jpeg in Resources */,
-				6B21B73C21F879C800ADCD87 /* Lets_get_started.png in Resources */,
 				6B83624521F3331B00C33C0F /* yeezy8.png in Resources */,
 				6B83626821F3331B00C33C0F /* superstar16.jpeg in Resources */,
 				6B83623021F3331B00C33C0F /* ultraboost1.jpeg in Resources */,
