@@ -19,6 +19,7 @@
 		6B6A0E1D21F883B000F95493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
+		6B7FE69F21FB0F2B00D5B044 /* Add_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7FE69E21FB0F2B00D5B044 /* Add_button.png */; };
 		6B83621821F3331B00C33C0F /* ultraboost27.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B8361AD21F3331B00C33C0F /* ultraboost27.jpeg */; };
 		6B83621921F3331B00C33C0F /* ultraboost3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B8361AE21F3331B00C33C0F /* ultraboost3.jpeg */; };
 		6B83621A21F3331B00C33C0F /* ultraboost31.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6B8361AF21F3331B00C33C0F /* ultraboost31.jpeg */; };
@@ -158,6 +159,7 @@
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		6B7FE69E21FB0F2B00D5B044 /* Add_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Add_button.png; path = ../../../../../Assets/Solefinder/Add_button.png; sourceTree = "<group>"; };
 		6B8361AD21F3331B00C33C0F /* ultraboost27.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ultraboost27.jpeg; sourceTree = "<group>"; };
 		6B8361AE21F3331B00C33C0F /* ultraboost3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ultraboost3.jpeg; sourceTree = "<group>"; };
 		6B8361AF21F3331B00C33C0F /* ultraboost31.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ultraboost31.jpeg; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 		6B21B73D21F87AD600ADCD87 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				6B7FE69E21FB0F2B00D5B044 /* Add_button.png */,
 				6B21B73E21F87B2600ADCD87 /* Click_here.png */,
 			);
 			path = Button;
@@ -653,6 +656,7 @@
 				6B83624A21F3331B00C33C0F /* yeezy5.jpeg in Resources */,
 				6B83627421F3331B00C33C0F /* nite10.jpeg in Resources */,
 				6B83626721F3331B00C33C0F /* superstar11.jpeg in Resources */,
+				6B7FE69F21FB0F2B00D5B044 /* Add_button.png in Resources */,
 				6B83623821F3331B00C33C0F /* kalus3.jpeg in Resources */,
 				6B83622221F3331B00C33C0F /* ultraboost21.jpeg in Resources */,
 				6B83622E21F3331B00C33C0F /* ultraboost6.jpeg in Resources */,
