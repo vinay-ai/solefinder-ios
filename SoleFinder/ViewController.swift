@@ -28,15 +28,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: {(action: UIAlertAction) in
             imagePickerController.sourceType = .camera
             
-            if UIImagePickerController.isSourceTypeAvailable(.camera){
                 imagePickerController.sourceType = .camera
                 self.present(imagePickerController, animated: true, completion: nil)
-            }
-            else
-            {
-                print("Camera not available")
-            }
-            self.present(imagePickerController, animated: true, completion: nil)
+           
         }))
         
          actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: {(action: UIAlertAction) in
