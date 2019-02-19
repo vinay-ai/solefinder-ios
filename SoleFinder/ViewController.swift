@@ -79,7 +79,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     @IBAction func OpenSafari(_ sender: Any) {
-        let SafariVC = SFSafariViewController(url: NSURL(string: "https://www.amazon.in")! as URL)
+        let SafariVC = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-brand=Adidas")! as URL)
         self.present(SafariVC, animated: true, completion: nil)
         SafariVC.delegate = self
     }
