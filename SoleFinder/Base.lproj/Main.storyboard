@@ -34,17 +34,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-8V-vuf">
-                                <rect key="frame" x="11" y="494" width="251" height="54"/>
+                                <rect key="frame" x="16" y="508" width="235" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Buy_Now_Button.png">
-                                    <color key="titleColor" white="0.40999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="BUY NOW" backgroundImage="Button_White.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="OpenSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYg-7q-KgY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLn-61-GSa">
-                                <rect key="frame" x="258" y="494" width="54" height="54"/>
+                                <rect key="frame" x="264" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="Add_button.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,8 +75,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add_button.png" width="150" height="150"/>
-        <image name="Buy_Now_Button.png" width="696" height="150"/>
+        <image name="Add_button.png" width="120" height="120"/>
+        <image name="Button_White.png" width="705" height="120"/>
         <image name="Lets_get_started.png" width="1152" height="1347"/>
     </resources>
 </document>
