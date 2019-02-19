@@ -6,9 +6,10 @@
 //  Copyright © 2019 Vinay Kolwankar. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
     
     let model = SoleIdentifier()
     @IBOutlet weak var imageView: UIImageView!
@@ -75,6 +76,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         return nil
     }
-
+    
+    
+    @IBAction func OpenSafari(_ sender: Any) {
+        let SafariVC = SFSafariViewController(url: NSURL(string: "https://www.amazon.in")! as URL)
+        self.present(SafariVC, animated: true, completion: nil)
+        SafariVC.delegate = self
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
