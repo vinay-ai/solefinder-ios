@@ -13,7 +13,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let model = SoleIdentifier()
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet var categoryLabel: UILabel!
+    var variable = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,10 +63,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let imagetoAnalyse = imageView?.image {
             if let soleLabelString = soleLabel(forImage: imagetoAnalyse){
                 categoryLabel.text = soleLabelString
+                variable = soleLabelString
             }
-            
         }
     }
+    
     
     func soleLabel (forImage image:UIImage)-> String? {
         if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: image.cgImage!){
@@ -78,15 +80,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     
-    @IBAction func OpenSafari(_ sender: Any) {
-        let SafariVC = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-brand=Adidas")! as URL)
-        self.present(SafariVC, animated: true, completion: nil)
-        SafariVC.delegate = self
-    }
+    @IBAction func OpenSafari(_ sender: UIButton) {
+        
+                let SafariVC = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(variable)")! as URL)
+                self.present(SafariVC, animated: true, completion: nil)
+                SafariVC.delegate = self
+            }
+            
+        }
+
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
     
-}
+
+
 
