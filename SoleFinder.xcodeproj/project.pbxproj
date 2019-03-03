@@ -17,9 +17,9 @@
 		6B26CC2F221C5F19001A7D9C /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC2E221C5F19001A7D9C /* Lets_get_started.png */; };
 		6B26CC35221C5FAC001A7D9C /* Purchase_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */; };
 		6B26CC39221C6188001A7D9C /* Add_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC38221C6188001A7D9C /* Add_button.png */; };
-		6B36BDEF222C0DD10019823B /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDEE222C0DD10019823B /* LoadingScreen.gif */; };
 		6B36BDF3222C10F20019823B /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */; };
 		6B36BDF5222C14740019823B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* UIImage+Gif.swift */; };
+		6B36BDFB222C2E090019823B /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDFA222C2E090019823B /* LoadingScreen.gif */; };
 		6B6A0E1D21F883B000F95493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
@@ -160,9 +160,9 @@
 		6B26CC2E221C5F19001A7D9C /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lets_get_started.png; path = ../../../../../Assets/Solefinder/Lets_get_started.png; sourceTree = "<group>"; };
 		6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purchase_Button.png; sourceTree = "<group>"; };
 		6B26CC38221C6188001A7D9C /* Add_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_button.png; sourceTree = "<group>"; };
-		6B36BDEE222C0DD10019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -371,7 +371,7 @@
 		6B36BDED222C0DA40019823B /* LoadingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				6B36BDEE222C0DD10019823B /* LoadingScreen.gif */,
+				6B36BDFA222C2E090019823B /* LoadingScreen.gif */,
 			);
 			path = LoadingScreen;
 			sourceTree = "<group>";
@@ -661,6 +661,7 @@
 				6B83625021F3331B00C33C0F /* zeta8.jpeg in Resources */,
 				6B83627221F3331B00C33C0F /* superstar13.jpeg in Resources */,
 				6B83625421F3331B00C33C0F /* zeta1.jpeg in Resources */,
+				6B36BDFB222C2E090019823B /* LoadingScreen.gif in Resources */,
 				6B83622B21F3331B00C33C0F /* ultraboost19.jpeg in Resources */,
 				6B83625A21F3331B00C33C0F /* alphabounce7.jpeg in Resources */,
 				6B83622721F3331B00C33C0F /* ultraboost16.jpeg in Resources */,
@@ -753,7 +754,6 @@
 				6B83624521F3331B00C33C0F /* yeezy8.png in Resources */,
 				6B83626821F3331B00C33C0F /* superstar16.jpeg in Resources */,
 				6B83623021F3331B00C33C0F /* ultraboost1.jpeg in Resources */,
-				6B36BDEF222C0DD10019823B /* LoadingScreen.gif in Resources */,
 				6B83622C21F3331B00C33C0F /* ultraboost18.jpeg in Resources */,
 				6B83624421F3331B00C33C0F /* yeezy9.png in Resources */,
 				6B83623521F3331B00C33C0F /* ultraboost28.jpeg in Resources */,
