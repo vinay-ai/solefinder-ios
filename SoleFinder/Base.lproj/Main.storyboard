@@ -81,6 +81,14 @@
                                     <action selector="ChooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAX-xQ-e4a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhh-Dg-vfC">
+                                <rect key="frame" x="13" y="470" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flipkart"/>
+                                <connections>
+                                    <action selector="OpenFlipkart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBQ-Eg-2jP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -104,7 +112,7 @@
     <resources>
         <image name="Add_button.png" width="120" height="120"/>
         <image name="Lets_get_started.png" width="960" height="1122"/>
-        <image name="LoadingScreen.gif" width="600" height="1065"/>
+        <image name="LoadingScreen.gif" width="640" height="1136"/>
         <image name="Purchase_Button.png" width="705" height="120"/>
     </resources>
 </document>

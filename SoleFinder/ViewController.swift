@@ -84,19 +84,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
                 let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(variable)")! as URL)
                 self.present(SafariVCA, animated: true, completion: nil)
-                SafariVC.delegate = self
+                SafariVCA.delegate = self
             }
+    @IBAction func OpenFlipkart(_ sender: UIButton) {
+        
+        let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(variable)")! as URL)
+        self.present(SafariVCF, animated: true, completion: nil)
+        SafariVCF.delegate = self
+    }
             
         }
 
-@IBAction func OpenFlipkart(_ sender: UIButton) {
-    
-    let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(variable)")! as URL)
-    self.present(SafariVCF, animated: true, completion: nil)
-    SafariVC.delegate = self
-}
 
-}
+
+
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         controller.dismiss(animated: true, completion: nil)
