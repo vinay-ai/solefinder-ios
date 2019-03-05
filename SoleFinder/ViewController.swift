@@ -9,7 +9,7 @@
 import SafariServices
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate{
     
     let model = SoleIdentifier()
     @IBOutlet weak var imageView: UIImageView!
@@ -56,6 +56,40 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func BuyProduct(_ sender: Any) {
+        
+        let BuyimagePickerController = UIImagePickerController()
+        BuyimagePickerController.delegate = self
+        let actionSheet = UIAlertController(title: "Purchase From", message: "Choose a source", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Amazon", style: .default, handler: {(action: UIAlertAction) in
+            
+            let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.variable)")! as URL)
+            self.present(SafariVCA, animated: true, completion: nil)
+            SafariVCA.delegate = self
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Flipkart", style: .default, handler: {(action: UIAlertAction) in
+            
+            let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.variable)")! as URL)
+            self.present(SafariVCF, animated: true, completion: nil)
+            SafariVCF.delegate = self
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    func BuyimagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func BuyimagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         let imageView = sender.view as? UIImageView
@@ -78,25 +112,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         return nil
     }
-    
-    
-    @IBAction func OpenAmazon(_ sender: UIButton) {
-        
-                let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(variable)")! as URL)
-                self.present(SafariVCA, animated: true, completion: nil)
-                SafariVCA.delegate = self
-            }
-    @IBAction func OpenFlipkart(_ sender: UIButton) {
-        
-        let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(variable)")! as URL)
-        self.present(SafariVCF, animated: true, completion: nil)
-        SafariVCF.delegate = self
-    }
-            
-        }
-
-
-
 
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
@@ -104,5 +119,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
 
-
-
+}
