@@ -20,6 +20,7 @@
 		6B36BDF3222C10F20019823B /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */; };
 		6B36BDF5222C14740019823B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* UIImage+Gif.swift */; };
 		6B36BDFB222C2E090019823B /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDFA222C2E090019823B /* LoadingScreen.gif */; };
+		6B5EEEED222E48860079A8F1 /* Blue_Outline_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */; };
 		6B6A0E1D21F883B000F95493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
@@ -163,6 +164,7 @@
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
+		6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Outline_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 		6B21B73D21F87AD600ADCD87 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */,
 				6B26CC38221C6188001A7D9C /* Add_button.png */,
 				6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */,
 			);
@@ -660,6 +663,7 @@
 				6B83624E21F3331B00C33C0F /* zeta5.jpeg in Resources */,
 				6B83625021F3331B00C33C0F /* zeta8.jpeg in Resources */,
 				6B83627221F3331B00C33C0F /* superstar13.jpeg in Resources */,
+				6B5EEEED222E48860079A8F1 /* Blue_Outline_Button.png in Resources */,
 				6B83625421F3331B00C33C0F /* zeta1.jpeg in Resources */,
 				6B36BDFB222C2E090019823B /* LoadingScreen.gif in Resources */,
 				6B83622B21F3331B00C33C0F /* ultraboost19.jpeg in Resources */,

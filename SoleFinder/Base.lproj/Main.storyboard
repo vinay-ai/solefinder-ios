@@ -56,9 +56,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <state key="normal" image="Purchase_Button.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Purchase" backgroundImage="Blue_Outline_Button.png">
+                                    <color key="titleColor" red="0.093330331146717072" green="0.24554723501205444" blue="0.83534467220306396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="BuyProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNy-M2-ep6"/>
@@ -103,8 +103,8 @@
     </scenes>
     <resources>
         <image name="Add_button.png" width="120" height="120"/>
+        <image name="Blue_Outline_Button.png" width="705" height="120"/>
         <image name="Lets_get_started.png" width="960" height="1122"/>
         <image name="LoadingScreen.gif" width="640" height="1136"/>
-        <image name="Purchase_Button.png" width="705" height="120"/>
     </resources>
 </document>
