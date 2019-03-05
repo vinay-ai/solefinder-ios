@@ -15,8 +15,74 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var categoryLabel: UILabel!
     var variable = ""
+    let reachability =  Reachability()!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        reachability.whenReachable = { _ in
+            DispatchQueue.main.async {
+                let Message = "You are connected to internet"
+                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+        
+        reachability.whenUnreachable = { _ in
+            DispatchQueue.main.async {
+                
+                let Message = "You are not connected to internet"
+                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(internetChanged), name: Notification.Name.reachabilityChanged , object: reachability)
+        do{
+            try reachability.startNotifier()
+        } catch {
+            print("Could not strat notifier")
+        }
+    }
+    
+    @objc  func internetChanged(note:Notification)  {
+        let reachability  =  note.object as! Reachability
+        if reachability.connection == .none{
+            if reachability.connection == .wifi{
+                let Message = "You are connected to internet"
+                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+            else{
+                DispatchQueue.main.async {
+                    let Message = "You are connected to internet"
+                    let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        } else{
+            DispatchQueue.main.async {
+                let Message = "You are not connected to internet"
+                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+
+    
+    func Alert (Message: String){
+        
+        let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
         
     }
     
