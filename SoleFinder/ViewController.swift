@@ -22,9 +22,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         reachability.whenReachable = { _ in
             DispatchQueue.main.async {
-                let Message = "You are connected to internet"
-                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let Message = "You are connected to internet!"
+                let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
         }
@@ -32,10 +32,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         reachability.whenUnreachable = { _ in
             DispatchQueue.main.async {
                 
-                let Message = "You are not connected to internet"
-                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let Message = "You are not connected to internet!"
+                let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.destructive, handler: nil))
                 self.present(alert, animated: true, completion: nil)
+                
                 
             }
         }
@@ -52,40 +53,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let reachability  =  note.object as! Reachability
         if reachability.connection == .none{
             if reachability.connection == .wifi{
-                let Message = "You are connected to internet"
-                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let Message = "You are connected to internet!"
+                let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 
             }
             else{
                 DispatchQueue.main.async {
-                    let Message = "You are connected to internet"
-                    let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                    let Message = "You are connected to internet!"
+                    let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
             }
         } else{
             DispatchQueue.main.async {
-                let Message = "You are not connected to internet"
-                let alert = UIAlertController(title: "", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                let Message = "You are not connected to internet!"
+                let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.destructive, handler: nil))
                 self.present(alert, animated: true, completion: nil)
+                }
             }
         }
-    }
 
-    
-    func Alert (Message: String){
-        
-        let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
-        
-    }
-    
 
     @IBAction func ChooseImage(_ sender: Any) {
         
