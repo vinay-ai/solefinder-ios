@@ -89,6 +89,7 @@
                     <connections>
                         <outlet property="categoryLabel" destination="BRg-5f-32o" id="Suf-1K-20Y"/>
                         <outlet property="imageView" destination="lsq-uh-O6N" id="EiF-Hn-WOH"/>
+                        <segue destination="TQz-vs-xnU" kind="show" identifier="noInternet" id="QLJ-JA-RF7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,11 +101,39 @@
             </objects>
             <point key="canvasLocation" x="1132.5" y="132.04225352112675"/>
         </scene>
+        <!--No Internet-->
+        <scene sceneID="yei-Py-pGI">
+            <objects>
+                <viewController id="TQz-vs-xnU" customClass="NoInternet" customModule="SoleFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eO0-tX-ZFf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Internet_Error.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-m2-Cbm">
+                                <rect key="frame" x="0.0" y="104" width="320" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pAv-yg-rh8"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="whenInternet" id="4Kt-A0-2RW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-bf-rne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066.25" y="130.98591549295776"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Add_button.png" width="120" height="120"/>
         <image name="Blue_Outline_Button.png" width="705" height="120"/>
+        <image name="Internet_Error.png" width="960" height="1122"/>
         <image name="Lets_get_started.png" width="960" height="1122"/>
         <image name="LoadingScreen.gif" width="640" height="1136"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Kt-A0-2RW"/>
+    </inferredMetricsTieBreakers>
 </document>

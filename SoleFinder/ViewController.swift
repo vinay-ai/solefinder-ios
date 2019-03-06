@@ -20,22 +20,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         reachability.whenReachable = { _ in
             DispatchQueue.main.async {
-                let Message = "You are connected to internet!"
-                let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                let Message = ""
+                let alert = UIAlertController(title: "Welcome Back!", message: Message, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Get started", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
+
         }
         
         reachability.whenUnreachable = { _ in
             DispatchQueue.main.async {
                 
-                let Message = "You are not connected to internet!"
-                let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.destructive, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+               self.performSegue(withIdentifier: "noInternet", sender: self)
                 
                 
             }
@@ -53,24 +52,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let reachability  =  note.object as! Reachability
         if reachability.connection == .none{
             if reachability.connection == .wifi{
-                let Message = "You are connected to internet!"
-                let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
+                
+                 self.performSegue(withIdentifier: "noInternet", sender: self)
                 
             }
             else{
                 DispatchQueue.main.async {
-                    let Message = "You are connected to internet!"
-                    let alert = UIAlertController(title: "Welcome", message: Message, preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                    let Message = ""
+                    let alert = UIAlertController(title: "Welcome Back!", message: Message, preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Get started", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
             }
         } else{
             DispatchQueue.main.async {
-                let Message = "You are not connected to internet!"
-                let alert = UIAlertController(title: "Alert", message: Message, preferredStyle: UIAlertController.Style.alert)
+                let Message = ""
+                let alert = UIAlertController(title: "Connection Lost", message: Message, preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.destructive, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 }
