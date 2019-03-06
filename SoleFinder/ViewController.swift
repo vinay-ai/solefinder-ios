@@ -96,7 +96,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
              self.present(imagePickerController, animated: true, completion: nil)
          }))
         
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
     }
@@ -134,7 +134,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             SafariVCF.delegate = self
         }))
         
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
     }
