@@ -43,34 +43,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lets_get_started.png" translatesAutoresizingMaskIntoConstraints="NO" id="lsq-uh-O6N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lets_get_started.png" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-hI-jP2">
                                 <rect key="frame" x="0.0" y="20" width="320" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsq-uh-O6N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xCX-0Q-nC7" appends="YES" id="94d-qf-sgD"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-8V-vuf">
-                                <rect key="frame" x="16" y="508" width="235" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
-                                <state key="normal" title="Purchase" backgroundImage="Blue_Outline_Button.png">
-                                    <color key="titleColor" red="0.093330331146717072" green="0.24554723501205444" blue="0.83534467220306396" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="BuyProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNy-M2-ep6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-5f-32o">
-                                <rect key="frame" x="16" y="419" width="288" height="24"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLn-61-GSa">
                                 <rect key="frame" x="264" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -87,7 +71,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="LuU-QA-RXT"/>
                     <connections>
-                        <outlet property="categoryLabel" destination="BRg-5f-32o" id="Suf-1K-20Y"/>
                         <outlet property="imageView" destination="lsq-uh-O6N" id="EiF-Hn-WOH"/>
                         <segue destination="TQz-vs-xnU" kind="show" identifier="noInternet" id="QLJ-JA-RF7"/>
                     </connections>
@@ -128,12 +111,12 @@
     </scenes>
     <resources>
         <image name="Add_button.png" width="120" height="120"/>
-        <image name="Blue_Outline_Button.png" width="705" height="120"/>
         <image name="Internet_Error.png" width="960" height="1122"/>
         <image name="Lets_get_started.png" width="960" height="1122"/>
         <image name="LoadingScreen.gif" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="QLJ-JA-RF7"/>
         <segue reference="4Kt-A0-2RW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,8 +13,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     let model = SoleIdentifier()
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var categoryLabel: UILabel!
-    var variable = ""
+    var SoleIndex = ""
     let reachability =  Reachability()!
     
     override func viewDidLoad() {
@@ -110,32 +109,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func BuyProduct(_ sender: Any) {
-        
-        let BuyimagePickerController = UIImagePickerController()
-        BuyimagePickerController.delegate = self
-        let actionSheet = UIAlertController(title: "Purchase From", message: "Choose a source", preferredStyle: .actionSheet)
-        
-        actionSheet.addAction(UIAlertAction(title: "Amazon", style: .default, handler: {(action: UIAlertAction) in
-            
-            let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.variable)")! as URL)
-            self.present(SafariVCA, animated: true, completion: nil)
-            SafariVCA.delegate = self
-            
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Flipkart", style: .default, handler: {(action: UIAlertAction) in
-            
-            let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.variable)")! as URL)
-            self.present(SafariVCF, animated: true, completion: nil)
-            SafariVCF.delegate = self
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
-        
-        self.present(actionSheet, animated: true, completion: nil)
-    }
-    
     func BuyimagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         picker.dismiss(animated: true, completion: nil)
@@ -150,9 +123,42 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         if let imagetoAnalyse = imageView?.image {
             if let soleLabelString = soleLabel(forImage: imagetoAnalyse){
-                categoryLabel.text = soleLabelString
-                variable = soleLabelString
+                SoleIndex = soleLabelString
+                let BuyimagePickerController = UIImagePickerController()
+                BuyimagePickerController.delegate = self
+                
+
+                
+                let actionSheet = UIAlertController(title: "Detected \(self.SoleIndex)", message: "", preferredStyle: .alert)
+                let imageView = UIImageView(frame: CGRect (x: 30, y: 70, width: 200, height: 100))
+                imageView.image = imagetoAnalyse
+                actionSheet.view.addSubview(imageView)
+                let height = NSLayoutConstraint(item: actionSheet.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 320)
+                let width = NSLayoutConstraint(item: actionSheet.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
+                actionSheet.view.addConstraint(height)
+                actionSheet.view.addConstraint(width)
+                
+                actionSheet.addAction(UIAlertAction(title: "Buy from Amazon", style: .default, handler: {(action: UIAlertAction) in
+                    
+                    let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.SoleIndex)")! as URL)
+                    self.present(SafariVCA, animated: true, completion: nil)
+                    SafariVCA.delegate = self
+                    
+                }))
+                
+                actionSheet.addAction(UIAlertAction(title: "Buy from Flipkart", style: .default, handler: {(action: UIAlertAction) in
+                    
+                    let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.SoleIndex)")! as URL)
+                    self.present(SafariVCF, animated: true, completion: nil)
+                    SafariVCF.delegate = self
+                }))
+                
+                actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+                
+                self.present(actionSheet, animated: true, completion: nil)
+                
             }
+            
         }
     }
     
