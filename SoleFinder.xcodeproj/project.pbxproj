@@ -15,11 +15,10 @@
 		6B0F287C21F2FF4E001647EF /* SoleFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F287B21F2FF4E001647EF /* SoleFinderTests.swift */; };
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
 		6B26CC2F221C5F19001A7D9C /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC2E221C5F19001A7D9C /* Lets_get_started.png */; };
-		6B26CC35221C5FAC001A7D9C /* Purchase_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */; };
-		6B26CC39221C6188001A7D9C /* Add_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B26CC38221C6188001A7D9C /* Add_button.png */; };
 		6B36BDF3222C10F20019823B /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */; };
 		6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* GifPlayer.swift */; };
 		6B36BDFB222C2E090019823B /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDFA222C2E090019823B /* LoadingScreen.gif */; };
+		6B3A51A62231079400BEDD26 /* Add_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A51A52231079400BEDD26 /* Add_button.png */; };
 		6B5EEEED222E48860079A8F1 /* Blue_Outline_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */; };
 		6B6A0E1D21F883B000F95493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
@@ -163,11 +162,10 @@
 		6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleFinderUITests.swift; sourceTree = "<group>"; };
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B26CC2E221C5F19001A7D9C /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lets_get_started.png; path = ../../../../../Assets/Solefinder/Lets_get_started.png; sourceTree = "<group>"; };
-		6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purchase_Button.png; sourceTree = "<group>"; };
-		6B26CC38221C6188001A7D9C /* Add_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_button.png; sourceTree = "<group>"; };
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* GifPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
 		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
+		6B3A51A52231079400BEDD26 /* Add_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_button.png; sourceTree = "<group>"; };
 		6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Outline_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
@@ -377,8 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */,
-				6B26CC38221C6188001A7D9C /* Add_button.png */,
-				6B26CC34221C5FAC001A7D9C /* Purchase_Button.png */,
+				6B3A51A52231079400BEDD26 /* Add_button.png */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -673,6 +670,7 @@
 				6B83626D21F3331B00C33C0F /* superstar14.jpeg in Resources */,
 				6B83622021F3331B00C33C0F /* ultraboost17.jpeg in Resources */,
 				6B83624E21F3331B00C33C0F /* zeta5.jpeg in Resources */,
+				6B3A51A62231079400BEDD26 /* Add_button.png in Resources */,
 				6B83625021F3331B00C33C0F /* zeta8.jpeg in Resources */,
 				6B83627221F3331B00C33C0F /* superstar13.jpeg in Resources */,
 				6B5EEEED222E48860079A8F1 /* Blue_Outline_Button.png in Resources */,
@@ -691,7 +689,6 @@
 				6B7933DA222FA350001C94FE /* Internet_Error.png in Resources */,
 				6B83626721F3331B00C33C0F /* superstar11.jpeg in Resources */,
 				6B83623821F3331B00C33C0F /* kalus3.jpeg in Resources */,
-				6B26CC39221C6188001A7D9C /* Add_button.png in Resources */,
 				6B83622221F3331B00C33C0F /* ultraboost21.jpeg in Resources */,
 				6B83622E21F3331B00C33C0F /* ultraboost6.jpeg in Resources */,
 				6B83626521F3331B00C33C0F /* superstar3.jpeg in Resources */,
@@ -737,7 +734,6 @@
 				6B83623221F3331B00C33C0F /* ultraboost29.jpeg in Resources */,
 				6B83623321F3331B00C33C0F /* ultraboost13.jpeg in Resources */,
 				6B83625E21F3331B00C33C0F /* alphabounce4.jpeg in Resources */,
-				6B26CC35221C5FAC001A7D9C /* Purchase_Button.png in Resources */,
 				6B83624021F3331B00C33C0F /* kalus12.jpeg in Resources */,
 				6B83626421F3331B00C33C0F /* superstar10.jpeg in Resources */,
 				6B83622821F3331B00C33C0F /* ultraboost15.jpeg in Resources */,

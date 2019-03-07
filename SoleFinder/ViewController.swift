@@ -130,9 +130,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
                 
                 let actionSheet = UIAlertController(title: "Detected \(self.SoleIndex)", message: "", preferredStyle: .alert)
-                let imageView = UIImageView(frame: CGRect (x: 30, y: 70, width: 200, height: 100))
-                imageView.image = imagetoAnalyse
-                actionSheet.view.addSubview(imageView)
+                let imageViewAlert = UIImageView(frame: CGRect (x: 30, y: 70, width: 200, height: 100))
+                imageViewAlert.image = imagetoAnalyse
+                imageViewAlert.contentMode = .scaleAspectFit
+                actionSheet.view.addSubview(imageViewAlert)
                 let height = NSLayoutConstraint(item: actionSheet.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 320)
                 let width = NSLayoutConstraint(item: actionSheet.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
                 actionSheet.view.addConstraint(height)
