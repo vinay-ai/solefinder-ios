@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoadingScreen.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uHz-Bd-qif">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoadingScreen.gif" translatesAutoresizingMaskIntoConstraints="NO" id="uHz-Bd-qif">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uHz-Bd-qif" firstAttribute="bottom" secondItem="GBz-Pm-0Gh" secondAttribute="bottom" id="7MO-Dv-V1p"/>
+                            <constraint firstItem="uHz-Bd-qif" firstAttribute="top" secondItem="GBz-Pm-0Gh" secondAttribute="top" id="SIj-TS-56c"/>
+                            <constraint firstItem="uHz-Bd-qif" firstAttribute="trailing" secondItem="GBz-Pm-0Gh" secondAttribute="trailing" id="o5w-pH-dcz"/>
+                            <constraint firstItem="uHz-Bd-qif" firstAttribute="leading" secondItem="GBz-Pm-0Gh" secondAttribute="leading" id="qex-sy-KVY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="D7i-ue-uEv"/>
                     </view>
                     <connections>
@@ -43,21 +48,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lets_get_started.png" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-hI-jP2">
-                                <rect key="frame" x="0.0" y="104" width="320" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsq-uh-O6N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lets_get_started.png" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-hI-jP2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lsq-uh-O6N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xCX-0Q-nC7" appends="YES" id="94d-qf-sgD"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLn-61-GSa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLn-61-GSa">
                                 <rect key="frame" x="244" y="488" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8Td-nK-pZA"/>
+                                    <constraint firstAttribute="width" constant="60" id="eBe-hu-DS1"/>
+                                </constraints>
                                 <state key="normal" image="Add_button.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -67,6 +73,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xLn-61-GSa" secondAttribute="trailing" constant="16" id="3P2-br-8p7"/>
+                            <constraint firstItem="MYH-hI-jP2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6YI-Yd-Xqx"/>
+                            <constraint firstItem="MYH-hI-jP2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="9fI-pv-gj0"/>
+                            <constraint firstItem="lsq-uh-O6N" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="HCi-6I-KcR"/>
+                            <constraint firstAttribute="bottom" secondItem="xLn-61-GSa" secondAttribute="bottom" constant="20" id="LvA-Vq-USR"/>
+                            <constraint firstItem="MYH-hI-jP2" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="NgA-dE-5S6"/>
+                            <constraint firstItem="lsq-uh-O6N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YTZ-Pt-uho"/>
+                            <constraint firstItem="lsq-uh-O6N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ohq-pI-E1i"/>
+                            <constraint firstItem="lsq-uh-O6N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r0D-CK-bLA"/>
+                            <constraint firstItem="MYH-hI-jP2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wgT-C6-lDi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="LuU-QA-RXT"/>
@@ -92,12 +110,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Internet_Error.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-m2-Cbm">
-                                <rect key="frame" x="0.0" y="104" width="320" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Internet_Error.png" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-m2-Cbm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P6B-m2-Cbm" firstAttribute="bottom" secondItem="eO0-tX-ZFf" secondAttribute="bottom" id="4vo-bc-3Om"/>
+                            <constraint firstItem="P6B-m2-Cbm" firstAttribute="trailing" secondItem="eO0-tX-ZFf" secondAttribute="trailing" id="6KJ-QG-Gf9"/>
+                            <constraint firstItem="P6B-m2-Cbm" firstAttribute="leading" secondItem="eO0-tX-ZFf" secondAttribute="leading" id="Fi2-xC-kgj"/>
+                            <constraint firstItem="P6B-m2-Cbm" firstAttribute="top" secondItem="eO0-tX-ZFf" secondAttribute="top" id="bcP-36-MqB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pAv-yg-rh8"/>
                     </view>
                     <connections>
@@ -106,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7O-bf-rne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2034" y="131"/>
+            <point key="canvasLocation" x="2032.5" y="130.98591549295776"/>
         </scene>
     </scenes>
     <resources>
@@ -116,6 +139,6 @@
         <image name="LoadingScreen.gif" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Kt-A0-2RW"/>
+        <segue reference="6AA-pH-Zpn"/>
     </inferredMetricsTieBreakers>
 </document>
