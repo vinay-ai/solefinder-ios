@@ -6,15 +6,20 @@
 //  Copyright © 2019 Vinay Kolwankar. All rights reserved.
 //
 
-import SafariServices
 import UIKit
+import SafariServices
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate{
+
+public var SoleIndex = ""
+public var SoleIndexString = ""
+
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
     
     let model = SoleIdentifier()
-    @IBOutlet weak var imageView: UIImageView!
-    var SoleIndex = ""
     let reachability =  Reachability()!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,34 +130,29 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let imagetoAnalyse = imageView?.image {
             if let soleLabelString = soleLabel(forImage: imagetoAnalyse){
                 SoleIndex = soleLabelString
+                SoleIndexString = SoleIndex.replacingOccurrences(of: " ", with: "+")
                 let BuyimagePickerController = UIImagePickerController()
                 BuyimagePickerController.delegate = self
-                
-
-                
-                let actionSheet = UIAlertController(title: "Detected \(self.SoleIndex)", message: "", preferredStyle: .alert)
-                actionSheet.addAction(UIAlertAction(title: "Buy from Amazon", style: .default, handler: {(action: UIAlertAction) in
-                    
-                    let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.SoleIndex)")! as URL)
-                    self.present(SafariVCA, animated: true, completion: nil)
-                    SafariVCA.delegate = self
-                    
-                }))
-                
-                actionSheet.addAction(UIAlertAction(title: "Buy from Flipkart", style: .default, handler: {(action: UIAlertAction) in
-                    
-                    let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.SoleIndex)")! as URL)
-                    self.present(SafariVCF, animated: true, completion: nil)
-                    SafariVCF.delegate = self
-                }))
-                
-                actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
-                
-                self.present(actionSheet, animated: true, completion: nil)
-                
+                CustomAlert.instance.showAlert(title: SoleIndex, accuracy: "70%", image: imagetoAnalyse)
             }
             
         }
+    }
+    
+    func onClickAmazon() {
+        let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(SoleIndexString)")! as URL)
+        self.present(SafariVCA, animated: true, completion: nil)
+        
+    }
+    
+    func onClickFlipkart() {
+        let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(SoleIndexString)")! as URL)
+        present(SafariVCF, animated: true, completion: nil)
+        
+    }
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     
@@ -164,11 +164,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             return sole.classLabel
         }
         return nil
-    }
-
-    
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
     }
     
 
