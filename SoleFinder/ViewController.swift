@@ -14,7 +14,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let model = SoleIdentifier()
     @IBOutlet weak var imageView: UIImageView!
     var SoleIndex = ""
-    var newSoleIndex = ""
     let reachability =  Reachability()!
     
     override func viewDidLoad() {
@@ -126,15 +125,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let imagetoAnalyse = imageView?.image {
             if let soleLabelString = soleLabel(forImage: imagetoAnalyse){
                 SoleIndex = soleLabelString
-                newSoleIndex = SoleIndex.replacingOccurrences(of: " ", with: "+")
                 let BuyimagePickerController = UIImagePickerController()
                 BuyimagePickerController.delegate = self
                 
+
                 
                 let actionSheet = UIAlertController(title: "Detected \(self.SoleIndex)", message: "", preferredStyle: .alert)
                 actionSheet.addAction(UIAlertAction(title: "Buy from Amazon", style: .default, handler: {(action: UIAlertAction) in
                     
-                    let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.newSoleIndex)")! as URL)
+                    let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.SoleIndex)")! as URL)
                     self.present(SafariVCA, animated: true, completion: nil)
                     SafariVCA.delegate = self
                     
@@ -142,7 +141,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 actionSheet.addAction(UIAlertAction(title: "Buy from Flipkart", style: .default, handler: {(action: UIAlertAction) in
                     
-                    let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.newSoleIndex)")! as URL)
+                    let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(self.SoleIndex)")! as URL)
                     self.present(SafariVCF, animated: true, completion: nil)
                     SafariVCF.delegate = self
                 }))
