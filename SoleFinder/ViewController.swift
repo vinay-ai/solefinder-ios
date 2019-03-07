@@ -118,6 +118,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.dismiss(animated: true, completion: nil)
     }
     
+    
     @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         let imageView = sender.view as? UIImageView
         
@@ -130,15 +131,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
                 
                 let actionSheet = UIAlertController(title: "Detected \(self.SoleIndex)", message: "", preferredStyle: .alert)
-                let imageViewAlert = UIImageView(frame: CGRect (x: 30, y: 70, width: 200, height: 100))
-                imageViewAlert.image = imagetoAnalyse
-                imageViewAlert.contentMode = .scaleAspectFit
-                actionSheet.view.addSubview(imageViewAlert)
-                let height = NSLayoutConstraint(item: actionSheet.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 320)
-                let width = NSLayoutConstraint(item: actionSheet.view, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250)
-                actionSheet.view.addConstraint(height)
-                actionSheet.view.addConstraint(width)
-                
                 actionSheet.addAction(UIAlertAction(title: "Buy from Amazon", style: .default, handler: {(action: UIAlertAction) in
                     
                     let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(self.SoleIndex)")! as URL)
