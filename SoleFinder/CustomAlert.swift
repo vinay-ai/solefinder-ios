@@ -13,6 +13,9 @@ class CustomAlert: UIView{
     
     static let instance = CustomAlert()
     
+    var effect:UIVisualEffect!
+    
+    @IBOutlet weak var blurFxView: UIVisualEffectView!
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var customAlert: UIView!
     @IBOutlet weak var accuracyIndex: UILabel!
@@ -35,7 +38,20 @@ class CustomAlert: UIView{
         alertImageView.layer.cornerRadius = 35
         alertImageView.contentMode = .scaleAspectFill
         alertImageView.clipsToBounds = true
+        effect = blurFxView.effect
+        blurFxView.effect = nil
         
+    }
+    
+    func animateIn(){
+        customAlert.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        customAlert.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.blurFxView.effect = self.effect
+            self.customAlert.alpha = 1
+            self.customAlert.transform = CGAffineTransform.identity
+        }
     }
     
     func showAlert(title: String, accuracy: String, image: UIImage) {

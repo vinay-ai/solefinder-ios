@@ -144,6 +144,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         let imageView = sender.view as? UIImageView
         
+        CustomAlert.instance.animateIn()
+        
         if let imagetoAnalyse = imageView?.image {
             if let soleLabelString = soleLabel(forImage: imagetoAnalyse){
                 SoleIndex = soleLabelString
