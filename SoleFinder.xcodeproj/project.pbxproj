@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0F1DAF2232DED400544A70 /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F1DAE2232DED400544A70 /* Cancel_Button.png */; };
 		6B0F286421F2FF4D001647EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286321F2FF4D001647EF /* AppDelegate.swift */; };
 		6B0F286621F2FF4D001647EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286521F2FF4D001647EF /* ViewController.swift */; };
 		6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */; };
@@ -17,7 +18,6 @@
 		6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */; };
 		6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBF2232ADF200E8B43B /* Add_Button.png */; };
 		6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */; };
-		6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 		6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7667CC223271D100A59DB0 /* Concentric_Circle.png */; };
@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0F1DAE2232DED400544A70 /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
 		6B0F286021F2FF4D001647EF /* SoleFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoleFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F286321F2FF4D001647EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B0F286521F2FF4D001647EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
 		6B3A8BBF2232ADF200E8B43B /* Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_Button.png; sourceTree = "<group>"; };
 		6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
-		6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -184,9 +184,9 @@
 		6B21B73D21F87AD600ADCD87 /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				6B0F1DAE2232DED400544A70 /* Cancel_Button.png */,
 				6B3A8BBF2232ADF200E8B43B /* Add_Button.png */,
 				6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */,
-				6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */,
 				6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */,
 			);
 			path = Button;
@@ -324,7 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */,
-				6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */,
+				6B0F1DAF2232DED400544A70 /* Cancel_Button.png in Resources */,
 				6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */,
 				6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */,
 				6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */,

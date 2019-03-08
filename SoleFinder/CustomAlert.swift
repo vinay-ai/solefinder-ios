@@ -18,7 +18,6 @@ class CustomAlert: UIView{
     @IBOutlet weak var blurFxView: UIVisualEffectView!
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var customAlert: UIView!
-    @IBOutlet weak var accuracyIndex: UILabel!
     @IBOutlet weak var soleIndexLabel: UILabel!
     @IBOutlet weak var alertImageView: UIImageView!
 
@@ -34,7 +33,7 @@ class CustomAlert: UIView{
     }
     
     private func commonInit() {
-        customAlert.layer.cornerRadius = 15
+        customAlert.layer.cornerRadius = 21
         alertImageView.layer.cornerRadius = 35
         alertImageView.contentMode = .scaleAspectFill
         alertImageView.clipsToBounds = true
