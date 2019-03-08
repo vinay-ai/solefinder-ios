@@ -17,7 +17,6 @@ class ShowSplashScreen: UIViewController {
         gifView.loadGif(name: "LoadingScreen")
         perform(#selector(ShowSplashScreen.showNavController), with: nil, afterDelay: 4.3)
 
-        // Do any additional setup after loading the view.
     }
     
     @objc func showNavController() {
