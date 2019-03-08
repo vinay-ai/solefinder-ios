@@ -31,7 +31,7 @@ class CustomAlert: UIView{
     
     private func commonInit() {
         customAlert.layer.cornerRadius = 15
-        alertImageView.layer.cornerRadius = 31
+        alertImageView.layer.cornerRadius = 35
         alertImageView.contentMode = .scaleAspectFill
         alertImageView.clipsToBounds = true
         
@@ -46,18 +46,16 @@ class CustomAlert: UIView{
         UIApplication.shared.keyWindow?.addSubview(parentView)
     }
     
-    func onClickCancel(_ sender: Any) {
+    @IBAction func onClickCancel(_ sender: Any) {
         parentView.removeFromSuperview()
     }
-    
-    func onClickAmazon(handler: Void)  {
- 
-    
+
+    @IBAction func onClickAmazon(_ sender: Any) {
         
     }
     
-    func onClickFlipkart(handler: Void)  {
-       
+    @IBAction func onClickFlipkart(_ sender: Any) {
+ 
     }
     
 }

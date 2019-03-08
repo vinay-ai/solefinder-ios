@@ -16,6 +16,7 @@
 		6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* GifPlayer.swift */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
+		6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7667CC223271D100A59DB0 /* Concentric_Circle.png */; };
 		6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7933D7222FA00E001C94FE /* NoInternet.swift */; };
 		6BD79F5B222F116A0026F74E /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5A222F116A0026F74E /* CheckInternet.swift */; };
 		6BD79F5D222F13480026F74E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5C222F13480026F74E /* Reachability.swift */; };
@@ -73,6 +74,7 @@
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		6B7667CC223271D100A59DB0 /* Concentric_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Concentric_Circle.png; sourceTree = "<group>"; };
 		6B7933D7222FA00E001C94FE /* NoInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternet.swift; sourceTree = "<group>"; };
 		6B7933D9222FA350001C94FE /* Internet_Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Internet_Error.png; sourceTree = "<group>"; };
 		6B8EB9FD22312B9100B10469 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lets_get_started.png; sourceTree = "<group>"; };
@@ -201,9 +203,18 @@
 			path = LoadingScreen;
 			sourceTree = "<group>";
 		};
+		6B7667CB223271AD00A59DB0 /* DesignElements */ = {
+			isa = PBXGroup;
+			children = (
+				6B7667CC223271D100A59DB0 /* Concentric_Circle.png */,
+			);
+			path = DesignElements;
+			sourceTree = "<group>";
+		};
 		6B8361AB21F332F500C33C0F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				6B7667CB223271AD00A59DB0 /* DesignElements */,
 				6B36BDED222C0DA40019823B /* LoadingScreen */,
 				6B21B73D21F87AD600ADCD87 /* Button */,
 				6B21B73621F8780500ADCD87 /* Stories */,
@@ -317,6 +328,7 @@
 			files = (
 				6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */,
 				6BFB1B702231B051000BCB00 /* Cancel_Button.png in Resources */,
+				6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */,
 				6BFB1B712231B051000BCB00 /* Amazon_Button.png in Resources */,
 				6BFB1B722231B051000BCB00 /* Flipkart_Button.png in Resources */,
 				6BFB1B732231B051000BCB00 /* Blue_Outline_Button.png in Resources */,
