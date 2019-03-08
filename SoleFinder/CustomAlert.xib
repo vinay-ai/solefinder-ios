@@ -29,15 +29,12 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
-                            <rect key="frame" x="40" y="208.5" width="295" height="250"/>
+                            <rect key="frame" x="40" y="209" width="295" height="250"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
-                                    <rect key="frame" x="247" y="15" width="33" height="33"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="33" id="hcJ-EZ-XcA"/>
-                                        <constraint firstAttribute="width" constant="33" id="vFo-0y-4aG"/>
-                                    </constraints>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
+                                    <rect key="frame" x="250" y="15" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="Cancel_Button.png"/>
                                     <connections>
                                         <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="FVT-pw-J8Z"/>
