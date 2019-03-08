@@ -152,7 +152,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 SoleIndexString = SoleIndex.replacingOccurrences(of: " ", with: "+")
                 let BuyimagePickerController = UIImagePickerController()
                 BuyimagePickerController.delegate = self
-                CustomAlert.instance.showAlert(title: SoleIndex, accuracy: "70%", image: imagetoAnalyse)
+                CustomAlert.instance.showAlert(title: SoleIndex, image: imagetoAnalyse)
             }
             
         }
@@ -188,6 +188,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 fatalError("Unexpected runtime error")
             }
             return sole.classLabel
+            
+            
         }
         return nil
     }

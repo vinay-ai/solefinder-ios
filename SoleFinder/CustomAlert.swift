@@ -54,9 +54,8 @@ class CustomAlert: UIView{
         }
     }
     
-    func showAlert(title: String, accuracy: String, image: UIImage) {
+    func showAlert(title: String, image: UIImage) {
         self.soleIndexLabel.text = title
-        self.accuracyIndex.text = accuracy
         self.alertImageView.image = image
         
         

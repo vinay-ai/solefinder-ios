@@ -14,6 +14,10 @@
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
 		6B36BDF3222C10F20019823B /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */; };
 		6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* GifPlayer.swift */; };
+		6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */; };
+		6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBF2232ADF200E8B43B /* Add_Button.png */; };
+		6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */; };
+		6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 		6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7667CC223271D100A59DB0 /* Concentric_Circle.png */; };
@@ -21,11 +25,6 @@
 		6BD79F5B222F116A0026F74E /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5A222F116A0026F74E /* CheckInternet.swift */; };
 		6BD79F5D222F13480026F74E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5C222F13480026F74E /* Reachability.swift */; };
 		6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDFA222C2E090019823B /* LoadingScreen.gif */; };
-		6BFB1B702231B051000BCB00 /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF85EDA22318EA3001BE59D /* Cancel_Button.png */; };
-		6BFB1B712231B051000BCB00 /* Amazon_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF85ED722318DDA001BE59D /* Amazon_Button.png */; };
-		6BFB1B722231B051000BCB00 /* Flipkart_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF85ED622318DDA001BE59D /* Flipkart_Button.png */; };
-		6BFB1B732231B051000BCB00 /* Blue_Outline_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */; };
-		6BFB1B742231B051000BCB00 /* Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A51A52231079400BEDD26 /* Add_Button.png */; };
 		6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8EB9FD22312B9100B10469 /* Lets_get_started.png */; };
 		6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7933D9222FA350001C94FE /* Internet_Error.png */; };
 		6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
@@ -69,8 +68,10 @@
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* GifPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
 		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
-		6B3A51A52231079400BEDD26 /* Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_Button.png; sourceTree = "<group>"; };
-		6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue_Outline_Button.png; sourceTree = "<group>"; };
+		6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
+		6B3A8BBF2232ADF200E8B43B /* Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_Button.png; sourceTree = "<group>"; };
+		6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
+		6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -80,9 +81,6 @@
 		6B8EB9FD22312B9100B10469 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lets_get_started.png; sourceTree = "<group>"; };
 		6BD79F5A222F116A0026F74E /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		6BD79F5C222F13480026F74E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		6BF85ED622318DDA001BE59D /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
-		6BF85ED722318DDA001BE59D /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
-		6BF85EDA22318EA3001BE59D /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
 		6BFB1B7C2231B2C3000BCB00 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		6BFB1B7D2231B2C3000BCB00 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,11 +184,10 @@
 		6B21B73D21F87AD600ADCD87 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				6BF85EDA22318EA3001BE59D /* Cancel_Button.png */,
-				6BF85ED722318DDA001BE59D /* Amazon_Button.png */,
-				6BF85ED622318DDA001BE59D /* Flipkart_Button.png */,
-				6B5EEEEC222E48860079A8F1 /* Blue_Outline_Button.png */,
-				6B3A51A52231079400BEDD26 /* Add_Button.png */,
+				6B3A8BBF2232ADF200E8B43B /* Add_Button.png */,
+				6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */,
+				6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */,
+				6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -327,17 +324,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */,
-				6BFB1B702231B051000BCB00 /* Cancel_Button.png in Resources */,
+				6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */,
 				6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */,
-				6BFB1B712231B051000BCB00 /* Amazon_Button.png in Resources */,
-				6BFB1B722231B051000BCB00 /* Flipkart_Button.png in Resources */,
-				6BFB1B732231B051000BCB00 /* Blue_Outline_Button.png in Resources */,
-				6BFB1B742231B051000BCB00 /* Add_Button.png in Resources */,
 				6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */,
 				6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */,
 				6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */,
 				6BFB1B792231B051000BCB00 /* Main.storyboard in Resources */,
 				6BFB1B7B2231B051000BCB00 /* LaunchScreen.storyboard in Resources */,
+				6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */,
+				6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */,
+				6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */,
 				6BFB1B7F2231B2C3000BCB00 /* CustomAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
