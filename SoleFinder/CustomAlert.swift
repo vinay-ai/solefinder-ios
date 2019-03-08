@@ -46,17 +46,17 @@ class CustomAlert: UIView{
         UIApplication.shared.keyWindow?.addSubview(parentView)
     }
     
-    @IBAction func onClickCancel(_ sender: Any) {
+    func onClickCancel(_ sender: Any) {
         parentView.removeFromSuperview()
     }
     
-    @IBAction func onClickAmazon(_ sender: Any) {
+    func onClickAmazon(handler: Void)  {
  
     
         
     }
     
-    @IBAction func onClickFlipkart(_ sender: Any) {
+    func onClickFlipkart(handler: Void)  {
        
     }
     

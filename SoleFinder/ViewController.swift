@@ -134,6 +134,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let BuyimagePickerController = UIImagePickerController()
                 BuyimagePickerController.delegate = self
                 CustomAlert.instance.showAlert(title: SoleIndex, accuracy: "70%", image: imagetoAnalyse)
+                CustomAlert.instance.onClickAmazon(handler: onClickAmazon())
+                CustomAlert.instance.onClickFlipkart(handler: onClickFlipkart())
             }
             
         }
