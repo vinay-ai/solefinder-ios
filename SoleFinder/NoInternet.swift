@@ -12,7 +12,6 @@ class NoInternet: UIViewController {
     
     let reachability =  Reachability()!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

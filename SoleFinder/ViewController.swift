@@ -18,12 +18,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let model = SoleIdentifier()
     let reachability =  Reachability()!
     
-    
     @IBOutlet weak var imageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         reachability.whenReachable = { _ in
             DispatchQueue.main.async {
@@ -39,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             DispatchQueue.main.async {
                 
                self.performSegue(withIdentifier: "noInternet", sender: self)
+                
                 
             }
         }
@@ -133,7 +134,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let BuyimagePickerController = UIImagePickerController()
                 BuyimagePickerController.delegate = self
                 CustomAlert.instance.showAlert(title: SoleIndex, accuracy: "70%", image: imagetoAnalyse)
-                
             }
             
         }
