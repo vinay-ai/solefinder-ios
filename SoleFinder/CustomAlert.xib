@@ -57,7 +57,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCh-8e-gdk">
                                     <rect key="frame" x="15" y="130" width="125" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                     <state key="normal" title="Amazon" backgroundImage="Amazon_Button.png">
                                         <color key="titleColor" red="0.94449931379999996" green="0.63050919770000002" blue="0.23118865490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
@@ -68,7 +68,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-Qu-uJg">
                                     <rect key="frame" x="149" y="130" width="122" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                     <state key="normal" title="Flipkart" backgroundImage="Flipkart_Button.png">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
@@ -95,7 +95,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
-                                    <rect key="frame" x="259" y="-11" width="43" height="43"/>
+                                    <rect key="frame" x="257" y="-11" width="43" height="43"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="Cancel_Button.png"/>
                                     <connections>
