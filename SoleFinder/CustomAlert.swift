@@ -31,7 +31,8 @@ class CustomAlert: UIView{
     
     private func commonInit() {
         customAlert.layer.cornerRadius = 15
-        alertImageView.layer.cornerRadius = frame.size.width / 2
+        alertImageView.layer.cornerRadius = 31
+        alertImageView.contentMode = .scaleAspectFill
         alertImageView.clipsToBounds = true
         
     }

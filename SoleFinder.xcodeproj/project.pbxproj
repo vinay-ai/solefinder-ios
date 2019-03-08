@@ -28,7 +28,6 @@
 		6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8EB9FD22312B9100B10469 /* Lets_get_started.png */; };
 		6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7933D9222FA350001C94FE /* Internet_Error.png */; };
 		6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
-		6BFB1B782231B051000BCB00 /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286321F2FF4D001647EF /* AppDelegate.swift */; };
 		6BFB1B792231B051000BCB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286721F2FF4D001647EF /* Main.storyboard */; };
 		6BFB1B7B2231B051000BCB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */; };
 		6BFB1B7E2231B2C3000BCB00 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB1B7C2231B2C3000BCB00 /* CustomAlert.swift */; };
@@ -325,7 +324,6 @@
 				6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */,
 				6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */,
 				6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */,
-				6BFB1B782231B051000BCB00 /* AppDelegate.swift in Resources */,
 				6BFB1B792231B051000BCB00 /* Main.storyboard in Resources */,
 				6BFB1B7B2231B051000BCB00 /* LaunchScreen.storyboard in Resources */,
 				6BFB1B7F2231B2C3000BCB00 /* CustomAlert.xib in Resources */,
