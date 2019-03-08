@@ -133,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add_Button.png" width="150" height="150"/>
+        <image name="Add_Button.png" width="120" height="120"/>
         <image name="Internet_Error.png" width="960" height="1122"/>
         <image name="Lets_get_started.png" width="960" height="1122"/>
         <image name="LoadingScreen.gif" width="640" height="1136"/>
