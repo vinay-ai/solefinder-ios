@@ -30,8 +30,10 @@ extension UIApplication {
     }
 }
 
-class ViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
-
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
+    
+    
+    
     let model = SoleIdentifier()
     let reachability =  Reachability()!
     
@@ -95,8 +97,26 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
 
 
     @IBAction func ChooseImage(_ sender: Any) {
-        CustomPicker.instancePicker.showPicker()
-
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: {(action: UIAlertAction) in
+            
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController, animated: true, completion: nil)
+           
+        }))
+        
+         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: {(action: UIAlertAction) in
+             imagePickerController.sourceType = .photoLibrary
+             self.present(imagePickerController, animated: true, completion: nil)
+         }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
     }
     
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -136,26 +156,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
             }
             
         }
-    }
-    
-    @objc func onClickCamera(){
-        if let topController = UIApplication.topViewController() {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .camera
-        topController.present(imagePickerController, animated: true, completion: nil)
-        }
-    
-    }
-    
-    @objc func onClickPhotoLibrary(){
-        if let topController = UIApplication.topViewController() {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .photoLibrary
-        topController.present(imagePickerController, animated: true, completion: nil)
-        }
-    
     }
     
     

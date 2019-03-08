@@ -18,6 +18,7 @@ class CustomAlert: UIView{
     @IBOutlet weak var blurFxView: UIVisualEffectView!
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var customAlert: UIView!
+    @IBOutlet weak var accuracyIndex: UILabel!
     @IBOutlet weak var soleIndexLabel: UILabel!
     @IBOutlet weak var alertImageView: UIImageView!
 

@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B0F1DA32232CB2500544A70 /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F1DA22232CB2500544A70 /* Cancel_Button.png */; };
-		6B0F1DA82232CC6000544A70 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F1DA62232CC6000544A70 /* CustomPicker.swift */; };
-		6B0F1DA92232CC6000544A70 /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F1DA72232CC6000544A70 /* CustomPicker.xib */; };
-		6B0F1DAC2232CF1300544A70 /* Camera_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F1DAA2232CF1300544A70 /* Camera_Button.png */; };
-		6B0F1DAD2232CF1300544A70 /* Photo_Library_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F1DAB2232CF1300544A70 /* Photo_Library_Button.png */; };
 		6B0F286421F2FF4D001647EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286321F2FF4D001647EF /* AppDelegate.swift */; };
 		6B0F286621F2FF4D001647EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286521F2FF4D001647EF /* ViewController.swift */; };
 		6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */; };
@@ -22,6 +17,7 @@
 		6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */; };
 		6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBF2232ADF200E8B43B /* Add_Button.png */; };
 		6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */; };
+		6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 		6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7667CC223271D100A59DB0 /* Concentric_Circle.png */; };
@@ -56,11 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B0F1DA22232CB2500544A70 /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
-		6B0F1DA62232CC6000544A70 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
-		6B0F1DA72232CC6000544A70 /* CustomPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
-		6B0F1DAA2232CF1300544A70 /* Camera_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera_Button.png; sourceTree = "<group>"; };
-		6B0F1DAB2232CF1300544A70 /* Photo_Library_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Photo_Library_Button.png; sourceTree = "<group>"; };
 		6B0F286021F2FF4D001647EF /* SoleFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoleFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F286321F2FF4D001647EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B0F286521F2FF4D001647EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +71,7 @@
 		6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
 		6B3A8BBF2232ADF200E8B43B /* Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_Button.png; sourceTree = "<group>"; };
 		6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
+		6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
@@ -150,11 +142,9 @@
 				6B7933D7222FA00E001C94FE /* NoInternet.swift */,
 				6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */,
 				6BFB1B7C2231B2C3000BCB00 /* CustomAlert.swift */,
-				6B0F1DA62232CC6000544A70 /* CustomPicker.swift */,
 				6B0F286521F2FF4D001647EF /* ViewController.swift */,
 				6B0F286321F2FF4D001647EF /* AppDelegate.swift */,
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
-				6B0F1DA72232CC6000544A70 /* CustomPicker.xib */,
 				6BFB1B7D2231B2C3000BCB00 /* CustomAlert.xib */,
 				6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */,
 				6B0F287221F2FF4E001647EF /* Info.plist */,
@@ -194,11 +184,9 @@
 		6B21B73D21F87AD600ADCD87 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				6B0F1DAA2232CF1300544A70 /* Camera_Button.png */,
-				6B0F1DAB2232CF1300544A70 /* Photo_Library_Button.png */,
-				6B0F1DA22232CB2500544A70 /* Cancel_Button.png */,
 				6B3A8BBF2232ADF200E8B43B /* Add_Button.png */,
 				6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */,
+				6B3A8BC12232ADF200E8B43B /* Cancel_Button.png */,
 				6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */,
 			);
 			path = Button;
@@ -336,20 +324,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */,
-				6B0F1DA32232CB2500544A70 /* Cancel_Button.png in Resources */,
+				6B3A8BC52232ADF200E8B43B /* Cancel_Button.png in Resources */,
 				6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */,
 				6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */,
 				6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */,
 				6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */,
-				6B0F1DA92232CC6000544A70 /* CustomPicker.xib in Resources */,
 				6BFB1B792231B051000BCB00 /* Main.storyboard in Resources */,
-				6B0F1DAC2232CF1300544A70 /* Camera_Button.png in Resources */,
 				6BFB1B7B2231B051000BCB00 /* LaunchScreen.storyboard in Resources */,
 				6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */,
 				6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */,
 				6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */,
 				6BFB1B7F2231B2C3000BCB00 /* CustomAlert.xib in Resources */,
-				6B0F1DAD2232CF1300544A70 /* Photo_Library_Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +361,6 @@
 			files = (
 				6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */,
 				6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */,
-				6B0F1DA82232CC6000544A70 /* CustomPicker.swift in Sources */,
 				6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */,
 				6BFB1B7E2231B2C3000BCB00 /* CustomAlert.swift in Sources */,
 				6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */,

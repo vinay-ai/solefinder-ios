@@ -76,6 +76,14 @@
                                         <action selector="onClickFlipkart:" destination="-1" eventType="touchUpInside" id="Cin-6G-FxJ"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
+                                    <rect key="frame" x="243" y="14" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="Cancel_Button.png"/>
+                                    <connections>
+                                        <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="90a-AC-k49"/>
+                                    </connections>
+                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tj-ya-OWc">
                                     <rect key="frame" x="15" y="42" width="70" height="70"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -94,14 +102,6 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
-                                    <rect key="frame" x="267" y="-10" width="31" height="31"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="Cancel_Button.png"/>
-                                    <connections>
-                                        <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="90a-AC-k49"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -116,7 +116,7 @@
     </objects>
     <resources>
         <image name="Amazon_Button.png" width="354" height="93"/>
-        <image name="Cancel_Button.png" width="114" height="114"/>
+        <image name="Cancel_Button.png" width="63" height="60"/>
         <image name="Flipkart_Button.png" width="321" height="84"/>
     </resources>
 </document>
