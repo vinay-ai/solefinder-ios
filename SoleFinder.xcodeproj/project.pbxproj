@@ -12,7 +12,6 @@
 		6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */; };
 		6B0F287C21F2FF4E001647EF /* SoleFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F287B21F2FF4E001647EF /* SoleFinderTests.swift */; };
 		6B0F288721F2FF4E001647EF /* SoleFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */; };
-		6B11431322328A1E009791CE /* BuyProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B11431222328A1E009791CE /* BuyProduct.swift */; };
 		6B36BDF3222C10F20019823B /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */; };
 		6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* GifPlayer.swift */; };
 		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
@@ -67,7 +66,6 @@
 		6B0F288221F2FF4E001647EF /* SoleFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoleFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0F288621F2FF4E001647EF /* SoleFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoleFinderUITests.swift; sourceTree = "<group>"; };
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B11431222328A1E009791CE /* BuyProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProduct.swift; sourceTree = "<group>"; };
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* GifPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
 		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */,
 				6BFB1B7C2231B2C3000BCB00 /* CustomAlert.swift */,
 				6B0F286521F2FF4D001647EF /* ViewController.swift */,
-				6B11431222328A1E009791CE /* BuyProduct.swift */,
 				6B0F286321F2FF4D001647EF /* AppDelegate.swift */,
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
 				6BFB1B7D2231B2C3000BCB00 /* CustomAlert.xib */,
@@ -370,7 +367,6 @@
 				6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */,
 				6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */,
 				6BFB1B7E2231B2C3000BCB00 /* CustomAlert.swift in Sources */,
-				6B11431322328A1E009791CE /* BuyProduct.swift in Sources */,
 				6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */,
 				6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */,
 				6B0F286621F2FF4D001647EF /* ViewController.swift in Sources */,
