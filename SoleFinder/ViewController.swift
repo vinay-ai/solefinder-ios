@@ -9,7 +9,6 @@
 import UIKit
 import SafariServices
 
-
 public var SoleIndex = ""
 public var SoleIndexString = ""
 
@@ -19,8 +18,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let reachability =  Reachability()!
     
     @IBOutlet weak var imageView: UIImageView!
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         reachability.whenReachable = { _ in
@@ -100,7 +99,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(actionSheet, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
         imageView.image = image
@@ -135,22 +134,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             
         }
-    }
-    
-    func onClickAmazon() {
-        let SafariVCA = SFSafariViewController(url: NSURL(string: "https://www.amazon.in/s?i=shoes&field-keywords=\(SoleIndexString)")! as URL)
-        self.present(SafariVCA, animated: true, completion: nil)
-        
-    }
-    
-    func onClickFlipkart() {
-        let SafariVCF = SFSafariViewController(url: NSURL(string: "https://www.flipkart.com/search?q=\(SoleIndexString)")! as URL)
-        present(SafariVCF, animated: true, completion: nil)
-        
-    }
-    
-    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
     }
     
     

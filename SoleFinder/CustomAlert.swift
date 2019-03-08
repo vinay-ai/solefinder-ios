@@ -18,6 +18,7 @@ class CustomAlert: UIView{
     @IBOutlet weak var accuracyIndex: UILabel!
     @IBOutlet weak var soleIndexLabel: UILabel!
     @IBOutlet weak var alertImageView: UIImageView!
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,10 +52,12 @@ class CustomAlert: UIView{
     }
 
     @IBAction func onClickAmazon(_ sender: Any) {
+        mainVC.onClickAmazon()
         
     }
     
     @IBAction func onClickFlipkart(_ sender: Any) {
+        mainVC.onClickFlipkart()
  
     }
     
