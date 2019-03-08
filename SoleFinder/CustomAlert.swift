@@ -31,8 +31,13 @@ class CustomAlert: UIView{
     
     private func commonInit() {
         customAlert.layer.cornerRadius = 15
-        alertImageView.layer.cornerRadius = frame.size.width / 2
+        alertImageView.layer.cornerRadius = 31
+        alertImageView.contentMode = .scaleAspectFill
         alertImageView.clipsToBounds = true
+        
+        
+        parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
     }
     
@@ -50,12 +55,11 @@ class CustomAlert: UIView{
     }
     
     @IBAction func onClickAmazon(_ sender: Any) {
- 
-    
         
     }
     
     @IBAction func onClickFlipkart(_ sender: Any) {
+        
        
     }
     

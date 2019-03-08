@@ -24,20 +24,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEd-qz-LBA">
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="FEd-qz-LBA">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
                             <rect key="frame" x="40" y="208.5" width="295" height="250"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
                                     <rect key="frame" x="247" y="15" width="33" height="33"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="33" id="hcJ-EZ-XcA"/>
-                                        <constraint firstAttribute="width" constant="33" id="vFo-0y-4aG"/>
-                                    </constraints>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="Cancel_Button.png"/>
                                     <connections>
                                         <action selector="onClickCancel:" destination="-1" eventType="touchUpInside" id="FVT-pw-J8Z"/>
@@ -55,7 +50,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-Qu-uJg">
-                                    <rect key="frame" x="164" y="190" width="107" height="28"/>
+                                    <rect key="frame" x="163" y="190" width="107" height="28"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                     <state key="normal" title="Flipkart" backgroundImage="Flipkart_Button.png">
@@ -65,7 +60,7 @@
                                         <action selector="onClickFlipkart:" destination="-1" eventType="touchUpInside" id="JQ1-Rs-xaw"/>
                                     </connections>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tj-ya-OWc">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tj-ya-OWc">
                                     <rect key="frame" x="25" y="63" width="62" height="62"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -85,12 +80,27 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="ROG-kq-ehp"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6036761558219178" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Wxk-Ch-oDb" firstAttribute="leading" secondItem="FEd-qz-LBA" secondAttribute="leading" constant="40" id="CgP-Ni-2rz"/>
+                        <constraint firstItem="Wxk-Ch-oDb" firstAttribute="centerX" secondItem="FEd-qz-LBA" secondAttribute="centerX" id="PwK-Y3-SQd"/>
+                        <constraint firstAttribute="trailing" secondItem="Wxk-Ch-oDb" secondAttribute="trailing" constant="40" id="Zkp-zX-2af"/>
+                        <constraint firstItem="Wxk-Ch-oDb" firstAttribute="centerY" secondItem="FEd-qz-LBA" secondAttribute="centerY" id="yYo-7b-jbs"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FEd-qz-LBA" firstAttribute="leading" secondItem="j7E-dC-oB8" secondAttribute="leading" id="S5y-Lb-8By"/>
+                <constraint firstItem="FEd-qz-LBA" firstAttribute="bottom" secondItem="j7E-dC-oB8" secondAttribute="bottom" id="ma9-VE-CHx"/>
+                <constraint firstItem="FEd-qz-LBA" firstAttribute="top" secondItem="AEn-Oi-2Fc" secondAttribute="top" id="obY-KH-7AM"/>
+                <constraint firstItem="FEd-qz-LBA" firstAttribute="trailing" secondItem="j7E-dC-oB8" secondAttribute="trailing" id="tJV-5k-Kac"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="j7E-dC-oB8"/>
             <point key="canvasLocation" x="80.799999999999997" y="174.96251874062969"/>
         </view>
