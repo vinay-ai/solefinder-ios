@@ -24,7 +24,7 @@
 		6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7933D7222FA00E001C94FE /* NoInternet.swift */; };
 		6BD79F5B222F116A0026F74E /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5A222F116A0026F74E /* CheckInternet.swift */; };
 		6BD79F5D222F13480026F74E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5C222F13480026F74E /* Reachability.swift */; };
-		6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B36BDFA222C2E090019823B /* LoadingScreen.gif */; };
+		6BDAD5212236555400C8EB07 /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6BDAD5202236555400C8EB07 /* LoadingScreen.gif */; };
 		6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B8EB9FD22312B9100B10469 /* Lets_get_started.png */; };
 		6BFB1B762231B051000BCB00 /* Internet_Error.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7933D9222FA350001C94FE /* Internet_Error.png */; };
 		6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6A0E1C21F883B000F95493 /* Assets.xcassets */; };
@@ -68,7 +68,6 @@
 		6B0F288821F2FF4E001647EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B36BDF2222C10F20019823B /* ShowSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
 		6B36BDF4222C14740019823B /* GifPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
-		6B36BDFA222C2E090019823B /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
 		6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
 		6B3A8BBF2232ADF200E8B43B /* Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add_Button.png; sourceTree = "<group>"; };
 		6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		6B8EB9FD22312B9100B10469 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lets_get_started.png; sourceTree = "<group>"; };
 		6BD79F5A222F116A0026F74E /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		6BD79F5C222F13480026F74E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6BDAD5202236555400C8EB07 /* LoadingScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LoadingScreen.gif; sourceTree = "<group>"; };
 		6BFB1B7C2231B2C3000BCB00 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		6BFB1B7D2231B2C3000BCB00 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,7 +195,7 @@
 		6B36BDED222C0DA40019823B /* LoadingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				6B36BDFA222C2E090019823B /* LoadingScreen.gif */,
+				6BDAD5202236555400C8EB07 /* LoadingScreen.gif */,
 			);
 			path = LoadingScreen;
 			sourceTree = "<group>";
@@ -323,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BFB1B6F2231B051000BCB00 /* LoadingScreen.gif in Resources */,
 				6B0F1DAF2232DED400544A70 /* Cancel_Button.png in Resources */,
 				6B7667CD223271D100A59DB0 /* Concentric_Circle.png in Resources */,
 				6BFB1B752231B051000BCB00 /* Lets_get_started.png in Resources */,
@@ -331,6 +330,7 @@
 				6BFB1B772231B051000BCB00 /* Assets.xcassets in Resources */,
 				6BFB1B792231B051000BCB00 /* Main.storyboard in Resources */,
 				6BFB1B7B2231B051000BCB00 /* LaunchScreen.storyboard in Resources */,
+				6BDAD5212236555400C8EB07 /* LoadingScreen.gif in Resources */,
 				6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */,
 				6B3A8BC32232ADF200E8B43B /* Add_Button.png in Resources */,
 				6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */,
