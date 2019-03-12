@@ -51,7 +51,7 @@
                             <blurEffect style="dark"/>
                         </visualEffectView>
                         <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
-                            <rect key="frame" x="16" y="193" width="287" height="182"/>
+                            <rect key="frame" x="16" y="193" width="288" height="182"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCh-8e-gdk">
