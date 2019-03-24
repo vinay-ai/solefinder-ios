@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEd-qz-LBA">
+                <view contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEd-qz-LBA">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <subviews>
@@ -50,7 +50,7 @@
                             </view>
                             <blurEffect style="dark"/>
                         </visualEffectView>
-                        <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxk-Ch-oDb">
                             <rect key="frame" x="16" y="193" width="288" height="182"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -95,7 +95,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-6g-Gtg">
-                                    <rect key="frame" x="257" y="-9" width="43" height="43"/>
+                                    <rect key="frame" x="229" y="8" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="Cancel_Button.png"/>
                                     <connections>
@@ -116,7 +116,7 @@
     </objects>
     <resources>
         <image name="Amazon_Button.png" width="354" height="93"/>
-        <image name="Cancel_Button.png" width="114" height="114"/>
+        <image name="Cancel_Button.png" width="180" height="180"/>
         <image name="Flipkart_Button.png" width="321" height="84"/>
     </resources>
 </document>
