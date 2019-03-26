@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import Foundation
 
 public var SoleIndex = ""
 public var SoleIndexString = ""
@@ -30,11 +31,24 @@ extension UIApplication {
     }
 }
 
+extension CGRect{
+    init(_ x:CGFloat,_ y:CGFloat,_ width:CGFloat,_ height:CGFloat) {
+        self.init(x:x,y:y,width:width,height:height)
+    }
+    
+}
+extension CGSize{
+    init(_ width:CGFloat,_ height:CGFloat) {
+        self.init(width:width,height:height)
+    }
+}
+
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SFSafariViewControllerDelegate {
     
     
     
-    let model = SoleIdentifier()
+    let model = convertedtf()
     let reachability =  Reachability()!
     
     @IBOutlet weak var imageView: UIImageView!
@@ -182,10 +196,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         controller.dismiss(animated: true, completion: nil)
     }
     
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+        
+        _ = newWidth / image.size.width
+        let newHeight = 299
+        UIGraphicsBeginImageContext(CGSize(newWidth, CGFloat(newHeight)))
+        image.draw(in: CGRect(0, 0, newWidth, CGFloat(newHeight)))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
+    
+    
+    
     
     func soleLabel (forImage image:UIImage)-> String? {
-        if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: image.cgImage!){
-            guard let sole = try? model.prediction(image: pixelBuffer) else {
+        
+        let newimage = resizeImage(image: image, newWidth: 299)
+        
+        if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: newimage.cgImage!){
+            guard let sole = try? model.prediction(Placeholder__0: pixelBuffer) else {
                 fatalError("Unexpected runtime error")
             }
             return sole.classLabel
@@ -197,3 +228,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 
 }
+
