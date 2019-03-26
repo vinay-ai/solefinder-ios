@@ -48,7 +48,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     
-    let model = convertedtf()
+    let model = SoleIdentifier()
     let reachability =  Reachability()!
     
     @IBOutlet weak var imageView: UIImageView!
@@ -213,10 +213,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func soleLabel (forImage image:UIImage)-> String? {
         
-        let newimage = resizeImage(image: image, newWidth: 299)
-        
-        if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: newimage.cgImage!){
-            guard let sole = try? model.prediction(Placeholder__0: pixelBuffer) else {
+        if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: image.cgImage!){
+            guard let sole = try? model.prediction(image: pixelBuffer) else {
                 fatalError("Unexpected runtime error")
             }
             return sole.classLabel
