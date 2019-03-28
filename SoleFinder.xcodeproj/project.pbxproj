@@ -279,13 +279,16 @@
 				TargetAttributes = {
 					6B0F285F21F2FF4D001647EF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					6B0F287621F2FF4E001647EF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 6B0F285F21F2FF4D001647EF;
 					};
 					6B0F288121F2FF4E001647EF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 6B0F285F21F2FF4D001647EF;
 					};
 				};
@@ -545,7 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -563,7 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -583,7 +586,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoleFinder.app/SoleFinder";
 			};
@@ -604,7 +607,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoleFinder.app/SoleFinder";
 			};
@@ -624,7 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SoleFinder;
 			};
@@ -644,7 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vinay.SoleFinderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SoleFinder;
 			};
