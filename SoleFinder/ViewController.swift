@@ -196,24 +196,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         controller.dismiss(animated: true, completion: nil)
     }
     
-    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+    func resizeImage (sourceImage:UIImage, scaledToWidth: CGFloat) -> UIImage {
         
-        _ = newWidth / image.size.width
         let newHeight = 299
-        UIGraphicsBeginImageContext(CGSize(newWidth, CGFloat(newHeight)))
-        image.draw(in: CGRect(0, 0, newWidth, CGFloat(newHeight)))
+        let newWidth = 299
+        
+        UIGraphicsBeginImageContext(CGSize(width: 299, height: 299))
+        sourceImage.draw(in: CGRect(x:0, y:0, width:Int(newWidth), height:Int(newHeight)))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         return newImage!
     }
     
     
     
-    
     func soleLabel (forImage image:UIImage)-> String? {
         
-        let newimage = resizeImage(image: image, newWidth: 299)
+        let newimage = resizeImage(sourceImage: image, scaledToWidth: 299)
         
         if let pixelBuffer = ImageProcessor.pixelBuffer(forImage: newimage.cgImage!){
             guard let sole = try? model.prediction(Placeholder__0: pixelBuffer) else {
