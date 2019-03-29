@@ -16,9 +16,9 @@
 		6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B36BDF4222C14740019823B /* GifPlayer.swift */; };
 		6B3A8BC22232ADF200E8B43B /* Flipkart_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */; };
 		6B3A8BC42232ADF200E8B43B /* Amazon_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */; };
-		6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */; };
 		6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */; };
 		6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7933D7222FA00E001C94FE /* NoInternet.swift */; };
+		6B89B806224D54C900BD6740 /* SoleIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6B89B805224D54C900BD6740 /* SoleIdentifier.mlmodel */; };
 		6BD79F5B222F116A0026F74E /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5A222F116A0026F74E /* CheckInternet.swift */; };
 		6BD79F5D222F13480026F74E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD79F5C222F13480026F74E /* Reachability.swift */; };
 		6BDAD5212236555400C8EB07 /* LoadingScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6BDAD5202236555400C8EB07 /* LoadingScreen.gif */; };
@@ -69,10 +69,10 @@
 		6B3A8BBE2232ADF200E8B43B /* Flipkart_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flipkart_Button.png; sourceTree = "<group>"; };
 		6B3A8BC02232ADF200E8B43B /* Amazon_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amazon_Button.png; sourceTree = "<group>"; };
 		6B6A0E1C21F883B000F95493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B6D3CE921F308CD00D99F7B /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		6B7933D7222FA00E001C94FE /* NoInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternet.swift; sourceTree = "<group>"; };
 		6B7933D9222FA350001C94FE /* Internet_Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Internet_Error.png; sourceTree = "<group>"; };
+		6B89B805224D54C900BD6740 /* SoleIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SoleIdentifier.mlmodel; sourceTree = "<group>"; };
 		6B8EB9FD22312B9100B10469 /* Lets_get_started.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lets_get_started.png; sourceTree = "<group>"; };
 		6BD79F5A222F116A0026F74E /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		6BD79F5C222F13480026F74E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 				6B0F286721F2FF4D001647EF /* Main.storyboard */,
 				6BFB1B7D2231B2C3000BCB00 /* CustomAlert.xib */,
 				6B0F286F21F2FF4E001647EF /* LaunchScreen.storyboard */,
+				6B89B805224D54C900BD6740 /* SoleIdentifier.mlmodel */,
 				6B0F287221F2FF4E001647EF /* Info.plist */,
 				6B0F286A21F2FF4D001647EF /* SoleFinder.xcdatamodeld */,
-				6B6D3CE721F306E900D99F7B /* SoleIdentifier.mlmodel */,
 			);
 			path = SoleFinder;
 			sourceTree = "<group>";
@@ -350,9 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6D3CE821F306E900D99F7B /* SoleIdentifier.mlmodel in Sources */,
 				6B0F286C21F2FF4D001647EF /* SoleFinder.xcdatamodeld in Sources */,
 				6B36BDF5222C14740019823B /* GifPlayer.swift in Sources */,
+				6B89B806224D54C900BD6740 /* SoleIdentifier.mlmodel in Sources */,
 				6BFB1B7E2231B2C3000BCB00 /* CustomAlert.swift in Sources */,
 				6B7933D8222FA00E001C94FE /* NoInternet.swift in Sources */,
 				6B6D3CEA21F308CD00D99F7B /* ImageProcessor.swift in Sources */,
